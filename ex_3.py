@@ -1,4 +1,9 @@
 def counting_chars_without_ifs(filename):
+    """
+    Function that counts how many signs are in the text
+    :param filename: name of the text file
+    :return: dictionary that consists of signs and how often they occur in the text
+    """
     with open(filename, 'r') as f:
         lines = f.readlines()
     lines = [line.replace(' ', '') for line in lines]
